@@ -1,0 +1,38 @@
+.wrapper{
+  // background-color: rebeccapurple;
+  height: 80vh;
+
+    .hero{
+    // background-color: olive;
+      &__container{
+      // background-color: blue;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      &--title{
+        // background-color: palegreen;
+        grid-column: 4 / 12;
+        grid-row: 3 / 5;
+        h2{
+          // background-color: palegreen;
+        }
+      }
+      &--content{
+        grid-column: 2 / 12;
+        grid-row: 11 / 13;
+        // background-color: orange;
+        p{
+          // background-color: lawngreen;
+        }
+      }
+    }
+  }
+}
+
+
+// ================================================================
+// ======================= 1400 =>  ===========================
+// ================================================================
+@include mQ(opS){
+
+}
