@@ -1,0 +1,277 @@
+.main{
+  .caracteristicas{
+    height: 150vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 30% 70%;
+      &__btnTiendas{
+        // height: 30vh;
+        // background-color: forestgreen;
+        grid-column: 2 / 12;
+        grid-row: 1 / 2;
+        &_content{
+          // background-color: hotpink;
+          display: grid;
+          grid-template-columns: repeat(12, 1fr);
+          grid-template-rows: 1fr 1fr;
+          grid-gap: 2px;
+
+          .appstore{
+            // height: 80%;
+            // background-color: rebeccapurple;
+            grid-column: 2 / 12;
+            grid-row: 1 / 2;
+          }
+          .playstore{
+            // height: 80%;
+            // background-color: red;
+            grid-column: 2 / 12;
+            grid-row: 2 / 3;
+          }
+        }
+
+      }
+      &__info{
+        // height: 100vh;
+        // background-color: darkblue;
+        grid-column: 2 / 12;
+        grid-row: 2 / 3;
+        .icono{
+          height: 80px;
+          // background-color: firebrick;
+        }
+        .titulo{
+          // background-color: hotpink;
+        }
+        .texto{
+          // background-color: lightcoral;
+        }
+
+      }
+    }
+  .invitacion{
+    // background-color: chartreuse;
+    &__container{
+      // background-color: tomato;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    &__titulo{
+      // background-color: darkcyan;
+      text-align: center;
+      grid-column: 2 / 12;
+    }
+    &__textos{
+      // background-color: teal;
+      grid-column: 2 / 12;
+      &--resalte{
+        // background-color: hotpink;
+        // padding: 1rem -1.5rem;
+        h4{
+          // background-color: yellowgreen;
+        }
+      }
+      &--contenido{
+        // background-color: lightcoral;
+        p{
+          // background-color: aqua;
+        }
+      }
+    }
+    &__btn{
+      grid-column: 2 / 12;
+      &--registro{
+        // background-color: red;
+      }
+      &--texto{
+        p{
+        }
+      }
+    }
+  }
+  .conductor{
+    // background-color: royalblue;
+    &__titulo{
+      // background-color: lightgreen;
+    }
+    &__contenido{
+      // background-color: peru;
+    }
+    &__btn{
+      &--registro{
+        // background-color: orchid;
+      }
+      &--texto{
+        // background-color: aqua;
+      }
+    }
+  }
+  .descarga{
+    // background-color: chartreuse;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    &__container{
+      // background-color: red;
+      grid-column: 2 / 12;
+      grid-row: 3 / 12;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+
+    }
+    &__titulo{
+      grid-column: 2 / 12;
+      grid-row: 1 / 2;
+      h2{
+      }
+    }
+    &__contenido{
+      // background-color: yellow;
+      grid-column: 2 / 12;
+      grid-row: 2 / 4;
+      p{
+      }
+    }
+    &__botones{
+      // background-color: aqua;
+      grid-column: 7 / 13;
+      grid-row: 5 / 10;
+      &_content{
+        // background-color: orangered;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1px;
+        .appstore{
+          // background-color: firebrick;
+          grid-column: 3 / 13;
+          grid-row: 1 / 2;
+        }
+        .playstore{
+          // background-color: plum;
+          grid-column: 3 / 13;
+          grid-row: 2 / 3;
+        }
+      }
+
+    }
+  }
+  .contacto{
+    // background-color:red;
+    .titulo{
+      text-align: center;
+      padding: 1rem;
+    }
+    .formulario{
+      // background-color:orange;
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      margin: 1rem 0;
+      form{
+        grid-column: 2 / 12;
+        .inputBox{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 1rem 0;
+          label, .entrada{
+            width: 100%;
+          }
+          .entrada{
+            border: 1px solid $secundario;
+            border-radius: 20px;
+            height: 40px;
+          }
+          .btnEnviar{
+            width: 60%;
+            height: 40px;
+            margin: 1rem 0;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(var(--button-gradient));
+            box-shadow: 0 3px 8px 1px rgba(242, 159, 14, 0.4);
+            color: $baseredes;
+          }
+        }
+      }
+      .note{
+        grid-column: 3 / 11;
+        font-style: italic;
+        font-size: .7rem;
+        text-align: center;
+      }
+    }
+  }
+
+}
+.piePagina{
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  // @include centerGrid;
+  // background-color: orchid;
+  background-image: url("/public/images/foo320.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  .logo{
+    height: 100%;
+    grid-column: 2 / 12;
+    grid-row: 4 / 12;
+    background-image: url("/public/images/logoNegativo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+
+
+// ================================================================
+// ======================= MEDIA QUERIES ==========================
+// ================================================================
+// ================================================================
+// ======================= 320 => 479 ===========================
+// ================================================================
+@include mQ(xsS){
+
+}
+// ================================================================
+// ======================= 480 => 599 ===========================
+// ================================================================
+@include mQ(smallS){
+
+}
+// ================================================================
+// ======================= 600 => 759 ===========================
+// ================================================================
+@include mQ(mediumS){
+
+}
+// ================================================================
+// ======================= 760 => 919 ===========================
+// ================================================================
+@include mQ(wideS){
+
+}
+// ================================================================
+// ======================= 920 => 1199 ===========================
+// ================================================================
+@include mQ(largeS){
+
+}
+// ================================================================
+// ======================= 1200 => 1399 ===========================
+// ================================================================
+@include mQ(xlS){
+
+}
+// ================================================================
+// ======================= 1400 =>  ===========================
+// ================================================================
+@include mQ(opS){
+
+}
+

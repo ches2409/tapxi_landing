@@ -1,0 +1,267 @@
+.main{
+  .caracteristicas{
+      &__btnTiendas{
+        // background-color: forestgreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_content{
+          // background-color: hotpink;
+          height: 90%;
+          width: 90%;
+          // align-content: center;
+
+          .appstore{
+            // background-color: rebeccapurple;
+            background-image: url("/public/images/appstore.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+          }
+          .playstore{
+            // background-color: red;
+            background-image: url("/public/images/playstore.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+          }
+        }
+
+      }
+      &__info{
+        // background-color: darkblue;
+
+        .icono{
+          // background-color: firebrick;
+          margin-bottom: -.5rem;
+
+        }
+        .titulo{
+          // background-color: hotpink;
+          h4{
+            font-size: 1.2rem;
+            color: $primario;
+          }
+        }
+        .texto{
+          // background-color: lightcoral;
+        }
+        .programa .icono{
+          background-image: url("/public/images/programa.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+        .tiempo .icono{
+          background-image: url("/public/images/tiempo.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+        .amigable .icono{
+          background-image: url("/public/images/amigable.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+
+        .programa, .tiempo, .amigable{
+          margin: 1.5rem auto;
+          text-align: center;
+        }
+
+      }
+    }
+  .invitacion{
+    height: 100vh;
+    // background-color: chartreuse;
+    background-image: url("/public/images/inv320.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @include centerFlex;
+    &__container{
+      // background-color: tomato;
+      margin-top: 2rem;
+      padding-top: 3rem;
+    }
+    &__titulo{
+      // background-color: darkcyan;
+      text-align: center;
+      grid-column: 2 / 12;
+        h2{
+          // background-color: rebeccapurple;
+          color: $resalte;
+        }
+    }
+    &__textos{
+      // background-color: teal;
+      text-align: center;
+      grid-column: 2 / 12;
+      &--resalte{
+        // background-color: hotpink;
+        // padding: 1rem -1.5rem;
+        h4{
+          // background-color: yellowgreen;
+          color: $baseredes;
+        }
+      }
+      &--contenido{
+        // background-color: lightcoral;
+        margin-top: 1rem;
+        p{
+          // background-color: aqua;
+          color:$baseredes
+        }
+      }
+    }
+    &__btn{
+      // background-color: orangered;
+      &--registro{
+        // background-color: red;
+        height: 120px;
+        background-image: url("/public/images/btnInvi.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      &--texto{
+        margin-top: -1rem;
+        text-align: center;
+        p{
+          color: $baseredes;
+        }
+      }
+    }
+  }
+  .conductor{
+    height: 70vh;
+    // background-color: royalblue;
+    text-align: center;
+    padding: 0 1.5rem;
+    &__titulo{
+      // background-color: lightgreen;
+      h2{
+        color: $color;
+      }
+    }
+    &__contenido{
+      // background-color: peru;
+      margin: 1rem 0;
+      text-align: justify;
+    }
+    &__btn{
+      &--registro{
+        // background-color: orchid;
+        height: 120px;
+        background-image: url("/public/images/btnCondu.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      &--texto{
+        // background-color: aqua;
+        margin-top: -1rem;
+      }
+    }
+  }
+  .descarga{
+    height: 100vh;
+    // background-color: chartreuse;
+    background-image: url("/public/images/des320.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__container{
+      // background-color: red;
+
+    }
+    &__titulo{
+      text-align: center;
+      margin-top: -1rem;
+      h2{
+        color: $baseredes;
+      }
+    }
+    &__contenido{
+      // background-color: yellow;
+      text-align: justify;
+      padding: .5rem 0;
+      p{
+        color: $baseredes;
+      }
+    }
+    &__botones{
+      // background-color: aqua;
+      margin-right: -1rem;
+      display: flex;
+      align-items: center;
+      &_content{
+        // background-color: orangered;
+        height: 80%;
+        width: 100%;
+        .appstore{
+          // background-color: firebrick;
+          background-image: url("/public/images/appstoreB.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+        .playstore{
+          // background-color: plum;
+          background-image: url("/public/images/playstoreB.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+
+    }
+  }
+}
+
+// ================================================================
+// ======================= MEDIA QUERIES ==========================
+// ================================================================
+// ================================================================
+// ======================= 320 => 479 ===========================
+// ================================================================
+@include mQ(xsS){
+
+}
+// ================================================================
+// ======================= 480 => 599 ===========================
+// ================================================================
+@include mQ(smallS){
+
+}
+// ================================================================
+// ======================= 600 => 759 ===========================
+// ================================================================
+@include mQ(mediumS){
+
+}
+// ================================================================
+// ======================= 760 => 919 ===========================
+// ================================================================
+@include mQ(wideS){
+
+}
+// ================================================================
+// ======================= 920 => 1199 ===========================
+// ================================================================
+@include mQ(largeS){
+
+}
+// ================================================================
+// ======================= 1200 => 1399 ===========================
+// ================================================================
+@include mQ(xlS){
+
+}
+// ================================================================
+// ======================= 1400 =>  ===========================
+// ================================================================
+@include mQ(opS){
+
+}
