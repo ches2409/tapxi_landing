@@ -58,7 +58,38 @@
 // ======================= 600 => 759 ===========================
 // ================================================================
 @include mQ(mediumS){
+  .wrapper{
+    // background-color: rebeccapurple;
+    height: 80vh;
+    background-image: url("/public/images/320.png");
 
+      .hero{
+
+      // background-color: lightblue;
+        &__container{
+          // height: 100%;
+        // background-color: blue;
+
+        &--title{
+          padding: 2rem 0 0 0 ;
+          h2{
+            // background-color: palegreen;
+          }
+        }
+        &--content{
+          // background-color: orange;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          // padding-bottom: -1rem;
+          p{
+            // background-color: lawngreen;
+            // text-align: justify;
+          }
+        }
+      }
+    }
+  }
 }
 // ================================================================
 // ======================= 760 => 919 ===========================

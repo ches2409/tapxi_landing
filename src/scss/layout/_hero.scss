@@ -31,8 +31,125 @@
 
 
 // ================================================================
+// ======================= MEDIA QUERIES ==========================
+// ================================================================
+// ================================================================
+// ======================= 320 => 479 ===========================
+// ================================================================
+@include mQ(xsS){
+
+}
+// ================================================================
+// ======================= 480 => 599 ===========================
+// ================================================================
+@include mQ(smallS){
+  .wrapper{
+    .hero{
+      // background-color: orangered;
+      &__container{
+        // background-color: blue;
+        // display: grid;
+        // grid-template-columns: repeat(12, 1fr);
+        // grid-template-rows: repeat(12, 1fr);
+        &--title{
+          // background-color: magenta;
+          // grid-column: 4 / 12;
+          // grid-row: 3 / 5;
+          h2{
+            // background-color: palegreen;
+          }
+        }
+        &--content{
+          // grid-column: 2 / 12;
+          grid-row: 5 / 7;
+          // background-color: orange;
+          p{
+            // background-color: lawngreen;
+            color: $baseredes
+          }
+        }
+      }
+    }
+  }
+}
+// ================================================================
+// ======================= 600 => 759 ===========================
+// ================================================================
+@include mQ(mediumS){
+  .wrapper{
+    .hero{
+      // background-color: lightblue;
+      &__container{
+        // background-color: blue;
+        &--title{
+          // background-color: magenta;
+          // grid-column: 4 / 12;
+          // grid-row: 3 / 5;
+          h2{
+            // background-color: palegreen;
+          }
+        }
+        &--content{
+          // grid-column: 2 / 12;
+          // grid-row: 5 / 7;
+          // background-color: orange;
+          p{
+            // background-color: lawngreen;
+          }
+        }
+      }
+    }
+  }
+}
+// ================================================================
+// ======================= 760 => 919 ===========================
+// ================================================================
+@include mQ(wideS){
+  .hero{
+    // background-color: rebeccapurple;
+    &__container{
+        // background-color: blue;
+        &--title{
+          // background-color: magenta;
+          // grid-column: 4 / 12;
+          // grid-row: 3 / 5;
+          h2{
+            // background-color: palegreen;
+          }
+        }
+        &--content{
+          // grid-column: 2 / 12;
+          // grid-row: 5 / 7;
+          // background-color: orange;
+          p{
+            // background-color: lawngreen;
+          }
+        }
+      }
+  }
+}
+// ================================================================
+// ======================= 920 => 1199 ===========================
+// ================================================================
+@include mQ(largeS){
+  .hero{
+    background-color: forestgreen;
+  }
+}
+// ================================================================
+// ======================= 1200 => 1399 ===========================
+// ================================================================
+@include mQ(xlS){
+  .hero{
+    background-color: lightcoral;
+  }
+
+}
+// ================================================================
 // ======================= 1400 =>  ===========================
 // ================================================================
 @include mQ(opS){
-
+  .hero{
+    background-color: purple;
+  }
 }

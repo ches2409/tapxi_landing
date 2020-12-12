@@ -10475,6 +10475,29 @@ a {
   grid-column: 2/12;
   grid-row: 11/13;
 }
+@media screen and (min-width: 480px) {
+  .wrapper .hero__container--content {
+    grid-row: 5/7;
+  }
+  .wrapper .hero__container--content p {
+    color: #fdfbfd;
+  }
+}
+@media screen and (min-width: 920px) {
+  .hero {
+    background-color: forestgreen;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-color: lightcoral;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero {
+    background-color: purple;
+  }
+}
 .main .caracteristicas {
   height: 150vh;
   display: grid;
@@ -10923,6 +10946,15 @@ header {
   text-align: justify;
 }
 
+@media screen and (min-width: 600px) {
+  .wrapper {
+    height: 80vh;
+    background-image: url("/public/images/320.png");
+  }
+  .wrapper .hero__container--title {
+    padding: 2rem 0 0 0;
+  }
+}
 .main .caracteristicas__btnTiendas {
   display: flex;
   justify-content: center;
@@ -11084,6 +11116,174 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+@media screen and (min-width: 600px) {
+  .caracteristicas__btnTiendas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .caracteristicas__btnTiendas_content {
+    height: 90%;
+    width: 90%;
+  }
+  .caracteristicas__btnTiendas_content .appstore {
+    background-image: url("/public/images/appstore.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .caracteristicas__btnTiendas_content .playstore {
+    background-image: url("/public/images/playstore.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .caracteristicas__info .icono {
+    margin-bottom: -0.5rem;
+  }
+  .caracteristicas__info .titulo h4 {
+    font-size: 1.2rem;
+    color: #241A40;
+  }
+  .caracteristicas__info .programa .icono {
+    background-image: url("/public/images/programa.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .caracteristicas__info .tiempo .icono {
+    background-image: url("/public/images/tiempo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .caracteristicas__info .amigable .icono {
+    background-image: url("/public/images/amigable.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .caracteristicas__info .programa, .caracteristicas__info .tiempo, .caracteristicas__info .amigable {
+    margin: 1.5rem auto;
+    text-align: center;
+  }
+
+  .invitacion {
+    height: 100vh;
+    background-image: url("/public/images/inv320.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .invitacion__container {
+    margin-top: 2rem;
+    padding-top: 3rem;
+  }
+  .invitacion__titulo {
+    text-align: center;
+    grid-column: 2/12;
+  }
+  .invitacion__titulo h2 {
+    color: #F29F0E;
+  }
+  .invitacion__textos {
+    text-align: center;
+    grid-column: 2/12;
+  }
+  .invitacion__textos--resalte h4 {
+    color: #fdfbfd;
+  }
+  .invitacion__textos--contenido {
+    margin-top: 1rem;
+  }
+  .invitacion__textos--contenido p {
+    color: #fdfbfd;
+  }
+  .invitacion__btn--registro {
+    height: 120px;
+    background-image: url("/public/images/btnInvi.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .invitacion__btn--texto {
+    margin-top: -1rem;
+    text-align: center;
+  }
+  .invitacion__btn--texto p {
+    color: #fdfbfd;
+  }
+
+  .conductor {
+    height: 70vh;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+  .conductor__titulo h2 {
+    color: #241A40;
+  }
+  .conductor__contenido {
+    margin: 1rem 0;
+    text-align: justify;
+  }
+  .conductor__btn--registro {
+    height: 120px;
+    background-image: url("/public/images/btnCondu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .conductor__btn--texto {
+    margin-top: -1rem;
+  }
+
+  .descarga {
+    height: 100vh;
+    background-image: url("/public/images/des320.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .descarga__titulo {
+    text-align: center;
+    margin-top: -1rem;
+  }
+  .descarga__titulo h2 {
+    color: #fdfbfd;
+  }
+  .descarga__contenido {
+    text-align: justify;
+    padding: 0.5rem 0;
+  }
+  .descarga__contenido p {
+    color: #fdfbfd;
+  }
+  .descarga__botones {
+    margin-right: -1rem;
+    display: flex;
+    align-items: center;
+  }
+  .descarga__botones_content {
+    height: 80%;
+    width: 100%;
+  }
+  .descarga__botones_content .appstore {
+    background-image: url("/public/images/appstoreB.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .descarga__botones_content .playstore {
+    background-image: url("/public/images/playstoreB.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
