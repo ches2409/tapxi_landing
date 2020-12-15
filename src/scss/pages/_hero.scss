@@ -1,7 +1,7 @@
 .wrapper{
   // background-color: rebeccapurple;
   height: 80vh;
-  background-image: url("/public/images/320.png");
+  background-image: url("/public/images/360.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
@@ -12,9 +12,16 @@
       &__container{
         height: 100%;
       // background-color: blue;
-
+      &--logo{
+        // background-color: forestgreen;
+        background-image: url("/public/images/logoNegativo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        z-index: 10;
+      }
       &--title{
-        padding: 1.5rem 0 0 0 ;
+        // padding: 1.5rem 0 0 0 ;
         h2{
           // background-color: palegreen;
           color: $baseredes;
@@ -52,7 +59,49 @@
 // ======================= 480 => 599 ===========================
 // ================================================================
 @include mQ(smallS){
+  .wrapper{
+    // background-color: rebeccapurple;
+    // height: 80vh;
+    background-image: url("/public/images/600.png");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: top center;
 
+      .hero{
+
+      // background-color: olive;
+        &__container{
+          // height: 100%;
+        // background-color: blue;
+        &--logo{
+          // background-color: gold;
+          // z-index: 10;
+        }
+
+        &--title{
+          padding: 1.5rem 0 0 0 ;
+          h2{
+            // background-color: palegreen;
+            // color: $baseredes;
+            // padding-left: 2px;
+            // margin: 2rem 0 0 0;
+            // text-align: center;
+          }
+        }
+        &--content{
+          // background-color: orange;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          // padding-bottom: -1rem;
+          p{
+            // background-color: lawngreen;
+            // text-align: justify;
+          }
+        }
+      }
+    }
+  }
 }
 // ================================================================
 // ======================= 600 => 759 ===========================
@@ -60,8 +109,11 @@
 @include mQ(mediumS){
   .wrapper{
     // background-color: rebeccapurple;
-    height: 80vh;
-    background-image: url("/public/images/320.png");
+    // height: 80vh;
+    background-image: url("/public/images/600.png");
+    // background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: top center;
 
       .hero{
 
@@ -95,24 +147,162 @@
 // ======================= 760 => 919 ===========================
 // ================================================================
 @include mQ(wideS){
+  .wrapper{
+    // background-color: rebeccapurple;
+    // height: 80vh;
+    background-image: url("/public/images/760.png");
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: top center;
 
+      .hero{
+
+      // background-color: lightblue;
+        &__container{
+          // height: 100%;
+        // background-color: blue;
+
+        &--title{
+          padding: 2rem 0 0 0 ;
+          h2{
+            // background-color: palegreen;
+          }
+        }
+        &--content{
+          // background-color: orange;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          // padding-bottom: -1rem;
+          p{
+            // background-color: lawngreen;
+            // text-align: justify;
+          }
+        }
+      }
+    }
+  }
 }
 // ================================================================
 // ======================= 920 => 1199 ===========================
 // ================================================================
 @include mQ(largeS){
+  .wrapper{
+    // background-color: rebeccapurple;
+    // height: 80vh;
+    background-image: url("/public/images/1200.png");
+    // background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: top center;
 
+      .hero{
+
+      // background-color: lightblue;
+        &__container{
+          // height: 100%;
+        // background-color: blue;
+
+        &--title{
+          padding: 2rem 0 0 0 ;
+          h2{
+            // background-color: palegreen;
+          }
+        }
+        &--content{
+          // background-color: orange;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          // padding-bottom: -1rem;
+          p{
+            // background-color: lawngreen;
+            // text-align: justify;
+          }
+        }
+      }
+    }
+  }
 }
 // ================================================================
 // ======================= 1200 => 1399 ===========================
 // ================================================================
 @include mQ(xlS){
+  .wrapper{
+    // background-color: rebeccapurple;
+    // height: 80vh;
+    background-image: url("/public/images/1366.png");
+    // background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: top center;
 
+      .hero{
+
+      // background-color: lightblue;
+        &__container{
+          // height: 100%;
+        // background-color: blue;
+
+        &--title{
+          padding: 2rem 0 0 0 ;
+          h2{
+            // background-color: palegreen;
+          }
+        }
+        &--content{
+          // background-color: orange;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          // padding-bottom: -1rem;
+          p{
+            // background-color: lawngreen;
+            // text-align: justify;
+          }
+        }
+      }
+    }
+  }
 }
 // ================================================================
 // ======================= 1400 =>  ===========================
 // ================================================================
 @include mQ(opS){
+  .wrapper{
+    // background-color: rebeccapurple;
+    // height: 80vh;
+    background-image: url("/public/images/1440.png");
+    // background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: top center;
 
+      .hero{
+
+      // background-color: lightblue;
+        &__container{
+          // height: 100%;
+        // background-color: blue;
+        &--logo{
+
+        }
+        &--title{
+          padding: 0 1rem;
+          h2{
+            // background-color: palegreen;
+          }
+        }
+        &--content{
+          // background-color: orange;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          padding: 5rem;
+          p{
+            // background-color: lawngreen;
+            // text-align: justify;
+          }
+        }
+      }
+    }
+  }
 }
 
