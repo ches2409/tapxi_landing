@@ -192,7 +192,7 @@
     // height: 80vh;
     background-image: url("/public/images/1200.png");
     // background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
     // background-position: top center;
 
       .hero{
@@ -230,7 +230,7 @@
   .wrapper{
     // background-color: rebeccapurple;
     // height: 80vh;
-    background-image: url("/public/images/1366.png");
+    background-image: url("/public/images/1366b.png");
     // background-repeat: no-repeat;
     background-size: cover;
     // background-position: top center;
@@ -243,7 +243,8 @@
         // background-color: blue;
 
         &--title{
-          padding: 2rem 0 0 0 ;
+          // background-color: firebrick;
+          padding: 0 ;
           h2{
             // background-color: palegreen;
           }
@@ -285,7 +286,7 @@
 
         }
         &--title{
-          padding: 0 1rem;
+          // padding: 0 1rem;
           h2{
             // background-color: palegreen;
           }
@@ -295,7 +296,7 @@
           // display: flex;
           // justify-content: center;
           // align-items: center;
-          padding: 5rem;
+          // padding: 5rem;
           p{
             // background-color: lawngreen;
             // text-align: justify;
